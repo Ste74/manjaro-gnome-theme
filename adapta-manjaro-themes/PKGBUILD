@@ -3,7 +3,8 @@
 
 pkgname=('adapta-maia-theme'
 		 'adapta-breath-theme'
-		 'manjaro-gdm-breath-theme')
+		 'manjaro-gdm-breath-theme'
+		 'manjaro-gdm-maia-theme')
 _pkgname=adapta-gtk-theme
 pkgver="3.91.1.26"
 pkgrel=1
