@@ -1,15 +1,18 @@
 # Maintainer: Stefano Capitani <stefano_at_manjaro_dot_org>
 # Contributor: ceyhunnabiyev for Breath color <https://github.com/ceyhunnabiyev>
 
-pkgname=('adapta-maia-theme'
-		 'adapta-breath-theme'
-		 'manjaro-gdm-breath-theme'
-		 'manjaro-gdm-maia-theme')
+pkgname=('adapta-maia-theme-dev'
+		 'adapta-breath-theme-dev'
+		 'manjaro-gdm-breath-theme-dev'
+		 'manjaro-gdm-maia-theme-dev')
 _pkgname=adapta-gtk-theme
-pkgver="3.91.1.26"
+_theme=manjaro-gnome-theme
+pkgver="3.91.1.53"
 pkgrel=1
 arch=(any)
+_commit=79620af99072d468ee6447f0b621105a40380ee8
 url="https://github.com/adapta-project/${_pkgname}"
+_url="https://github.com/Ste74/$_theme"
 license=('GPL2' 'CCPL')
 optdepends=('ttf-roboto: The recommended font'
             'noto-fonts: The recommended font for improved language support'
@@ -23,19 +26,23 @@ makedepends=('libxml2'
 	         'parallel'
 	         'gnome-shell')
 source=("${_pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz"
-        'manjaro-label.png'
-        '.face')
-sha256sums=('caf9c81b52bb261dd13554252cdf4f16270101c64786935925c28565434a18c7'
-            'b5f7986d2e88503d3ecb5869e1550d17265b688ab32d2607050afbbbec709d9a'
-            'a374417d6d6711fe2e287c87eef90d09ceecb9843066d0666f2652ab531d7dab')
+        "$_theme-$pkgver.tar.gz::$_url/archive/$_commit.tar.gz")
+sha256sums=('7210113ca63d47311d70f906d96f6b74b584496c228e73d76c6afa13dba23ab0'
+            'cff4bdafba03d545ec14f7f9f00da505894020762fee6aa7324827c3727e910e')
 
 prepare() {
+
 #Change background of GDM 
 cd $srcdir
-    cp -f manjaro-label.png $_pkgname-$pkgver/shell/asset/assets-gnome-shell/common/noise-texture.png
+    cp -f $_theme-$_commit/common/manjaro-label.png $_pkgname-$pkgver/shell/asset/assets-gnome-shell/common/noise-texture.png
     cd $_pkgname-$pkgver/shell/sass/gnome-shell
     find . -type f -name '_common.scss' -exec sed -i "s|background-repeat|background-size|g" {} \;
     find . -type f -name '_common.scss' -exec sed -i "s|repeat|auto|g" {} \;
+
+#Change the shell icon app
+cd $srcdir
+	cp -f $_theme-$_commit/common/*.svg $_pkgname-$pkgver/shell/asset/assets-gnome-shell/common/	
+	
 #Create separate theme
 cd $srcdir
     for theme in adapta-maia-theme adapta-breath-theme; do
@@ -69,7 +76,7 @@ build_breath-theme() {
     make
 }
 
-package_adapta-maia-theme() {
+package_adapta-maia-theme-dev() {
 pkgdesc="An adaptive Gtk+ theme based on Material Design Guidelines.Build with Manjaro Maia color"
 	build_maia-theme
     #cd "adapta-maia-theme-${pkgver}"
@@ -99,12 +106,10 @@ cd "$pkgdir/usr/share/themes/Adapta-Nokto-Maia"
     ln -sf /usr/share/themes/Adapta-Maia/gtk-3.0 gtk-3.0
 
 cd "$pkgdir/usr/share/themes/Adapta-Eta-Maia"
-    #ln -sf /usr/share/themes/Adapta-Maia/chrome chrome
     ln -sf /usr/share/themes/Adapta-Maia/xfce-notify-4.0 xfce-notify-4.0
     ln -sf /usr/share/themes/Adapta-Maia/plank plank 
     ln -sf /usr/share/themes/Adapta-Maia/telegram telegram     
     ln -sf /usr/share/themes/Adapta-Maia/metacity-1 metacity-1
-    #ln -sf /usr/share/themes/Adapta-Maia/unity unity
 
 cd "$pkgdir/usr/share/themes/Adapta-Nokto-Eta-Maia"
     ln -sf /usr/share/themes/Adapta-Eta-Maia/gtk-3.22 gtk-3.22 
@@ -114,7 +119,7 @@ cd "$pkgdir/usr/share/themes/Adapta-Nokto-Eta-Maia"
     ln -sf /usr/share/themes/Adapta-Maia/xfce-notify-4.0 xfce-notify-4.0
 }
 
-package_adapta-breath-theme() {
+package_adapta-breath-theme-dev() {
 pkgdesc="An adaptive Gtk+ theme based on Material Design Guidelines.Build with Manjaro Breath color"
 	build_breath-theme
     #cd "adapta-breath-theme-${pkgver}"
@@ -157,21 +162,25 @@ cd "$pkgdir/usr/share/themes/Adapta-Nokto-Eta-Breath"
     ln -sf /usr/share/themes/Adapta-Breath/xfce-notify-4.0 xfce-notify-4.0
 }
 
-package_manjaro-gdm-breath-theme() {
+package_manjaro-gdm-breath-theme-dev() {
 pkgdesc="Manjaro Breath GDM theme"
 backup=("usr/share/gnome-shell/gnome-shell-theme.gresource")
 
 install -dm755 $pkgdir/usr/share/gnome-shell
+install -dm755 $pkgdir/etc/skel
 cd $srcdir/adapta-breath-theme-$pkgver/shell/gnome-shell
 cp gnome-shell-theme.gresource $pkgdir/usr/share/gnome-shell/
+cp $srcdir/$_theme-$_commit/common/.face $pkgdir/etc/skel/.face
 }
 
-package_manjaro-gdm-maia-theme() {
+package_manjaro-gdm-maia-theme-dev() {
 pkgdesc="Manjaro Maia GDM theme"
 backup=("usr/share/gnome-shell/gnome-shell-theme.gresource")
 
 install -dm755 $pkgdir/usr/share/gnome-shell
+install -dm755 $pkgdir/etc/skel
 cd $srcdir/adapta-maia-theme-$pkgver/shell/gnome-shell
 cp gnome-shell-theme.gresource $pkgdir/usr/share/gnome-shell/
+cp $srcdir/$_theme-$_commit/common/.face $pkgdir/etc/skel/.face
 }
 
