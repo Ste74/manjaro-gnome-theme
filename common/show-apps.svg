@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -9,78 +9,82 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="64"
-   height="64"
-   viewBox="0 0 64 64"
+   width="56.444447mm"
+   height="56.44445mm"
+   viewBox="0 0 200 200.00002"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92+devel unknown"
-   sodipodi:docname="show-apps.svg"
-   style="stroke:#ffffff">
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="maia.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="30.692892"
+     inkscape:cy="126.5323"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="742"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:pagecheckerboard="true" />
   <metadata
-     id="metadata16">
+     id="metadata7">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:title></dc:title>
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
-      </cc:License>
     </rdf:RDF>
   </metadata>
-  <defs
-     id="defs14" />
-  <sodipodi:namedview
-     pagecolor="#808080"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="734"
-     id="namedview12"
-     showgrid="true"
-     inkscape:zoom="8.7830105"
-     inkscape:cx="-7.5500458"
-     inkscape:cy="31.55768"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg2"
-     showguides="false"
-     inkscape:document-rotation="0">
-    <sodipodi:guide
-       position="590.23042,546.50965"
-       orientation="0,1"
-       id="guide4136"
-       inkscape:locked="false" />
-    <inkscape:grid
-       type="xygrid"
-       id="grid4162" />
-  </sodipodi:namedview>
-  <path
-     style="fill:#cfd8dc;fill-opacity:1;fill-rule:evenodd;stroke-width:0"
-     d="M 21 18 A 3 3 0 0 0 18 21 A 3 3 0 0 0 21 24 A 3 3 0 0 0 24 21 A 3 3 0 0 0 21 18 z M 32 18 A 3 3 0 0 0 29 21 A 3 3 0 0 0 32 24 A 3 3 0 0 0 35 21 A 3 3 0 0 0 32 18 z M 43 18 A 3 3 0 0 0 40 21 A 3 3 0 0 0 43 24 A 3 3 0 0 0 46 21 A 3 3 0 0 0 43 18 z M 21 29 A 3 3 0 0 0 18 32 A 3 3 0 0 0 21 35 A 3 3 0 0 0 24 32 A 3 3 0 0 0 21 29 z M 32 29 A 3 3 0 0 0 29 32 A 3 3 0 0 0 32 35 A 3 3 0 0 0 35 32 A 3 3 0 0 0 32 29 z M 43 29 A 3 3 0 0 0 40 32 A 3 3 0 0 0 43 35 A 3 3 0 0 0 46 32 A 3 3 0 0 0 43 29 z M 21 40 A 3 3 0 0 0 18 43 A 3 3 0 0 0 21 46 A 3 3 0 0 0 24 43 A 3 3 0 0 0 21 40 z M 32 40 A 3 3 0 0 0 29 43 A 3 3 0 0 0 32 46 A 3 3 0 0 0 35 43 A 3 3 0 0 0 32 40 z M 43 40 A 3 3 0 0 0 40 43 A 3 3 0 0 0 43 46 A 3 3 0 0 0 46 43 A 3 3 0 0 0 43 40 z "
-     id="path4267" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(222.41168,-236.90016)">
+    <g
+       id="g5967">
+      <g
+         id="g4446"
+         transform="matrix(1.2196132,0,0,1.0000088,-467.56616,-225.96506)"
+         style="fill:#16a085;fill-opacity:1">
+        <rect
+           style="opacity:1;fill:#16a085;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.07399988;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:21.222, 21.222;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4149-7"
+           width="47.994675"
+           height="199.99825"
+           x="317.00177"
+           y="462.86115" />
+        <rect
+           style="opacity:1;fill:#16a085;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.07399988;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:21.222, 21.222;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4149-0-6"
+           width="47.994675"
+           height="129.26767"
+           x="259.00415"
+           y="533.59174" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path5961"
+         d="m -222.41168,236.90016 h 129.26633 v 58.53494 h -70.93002 v 141.46508 h -58.33631 z"
+         style="fill:#16a085;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.93749994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
 </svg>
