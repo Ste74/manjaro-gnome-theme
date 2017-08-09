@@ -1,7 +1,7 @@
 [Trigger]
 Operation = Install
 Type = File
-Target = /usr/share/gnome-shell/*
+Target = /usr/share/gnome-shell/gnome-shell-theme.gresource
 
 [Action]
 Description = Manjaro GDM theme install
