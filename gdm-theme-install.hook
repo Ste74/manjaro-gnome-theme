@@ -2,9 +2,8 @@
 Operation = Install
 Type = Package
 Target = manjaro-gdm-breath-theme-dev
-Target = manjaro-gdm-maia-theme-dev
 
 [Action]
-Description = Manjaro GDM theme install
+Description = Manjaro GDM breath theme install
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/gdm-theme-install
