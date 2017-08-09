@@ -1,7 +1,8 @@
 [Trigger]
 Operation = Install
-Type = File
-Target = /usr/share/gnome-shell/gnome-shell-theme.gresource
+Type = Package
+Target = manjaro-gdm-breath-theme
+Target = manjaro-gdm-maia-theme
 
 [Action]
 Description = Manjaro GDM theme install
