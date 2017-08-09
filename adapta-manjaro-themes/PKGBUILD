@@ -165,22 +165,45 @@ cd "$pkgdir/usr/share/themes/Adapta-Nokto-Eta-Breath"
 package_manjaro-gdm-breath-theme-dev() {
 pkgdesc="Manjaro Breath GDM theme"
 backup=("usr/share/gnome-shell/gnome-shell-theme.gresource")
+_hook=gdm-theme
 
 install -dm755 $pkgdir/usr/share/gnome-shell
 install -dm755 $pkgdir/etc/skel
 cd $srcdir/adapta-breath-theme-$pkgver/shell/gnome-shell
 cp gnome-shell-theme.gresource $pkgdir/usr/share/gnome-shell/
 cp $srcdir/$_theme-$_commit/common/.face $pkgdir/etc/skel/.face
+
+#Hook
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-pretransaction.hook $pkgdir/usr/share/libalpm/hooks/$_hook-pretransaction.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-pretransaction.script $pkgdir/usr/share/libalpm/$_hook-pretransaction
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-install.hook $pkgdir/usr/share/libalpm/hooks/$_hook-install.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-install.script $pkgdir/usr/share/libalpm/$_hook-install
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-upgrade.hook $pkgdir/usr/share/libalpm/hooks/$_hook-upgrade.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-upgrade.script $pkgdir/usr/share/libalpm/$_hook-upgrade
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-remove.hook $pkgdir/usr/share/libalpm/hooks/$_hook-remove.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-remove.script $pkgdir/usr/share/libalpm/$_hook-remove
+
 }
 
 package_manjaro-gdm-maia-theme-dev() {
 pkgdesc="Manjaro Maia GDM theme"
 backup=("usr/share/gnome-shell/gnome-shell-theme.gresource")
+_hook=gdm-theme
 
 install -dm755 $pkgdir/usr/share/gnome-shell
 install -dm755 $pkgdir/etc/skel
 cd $srcdir/adapta-maia-theme-$pkgver/shell/gnome-shell
 cp gnome-shell-theme.gresource $pkgdir/usr/share/gnome-shell/
 cp $srcdir/$_theme-$_commit/common/.face $pkgdir/etc/skel/.face
+
+#Hook
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-pretransaction.hook $pkgdir/usr/share/libalpm/hooks/$_hook-pretransaction.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-pretransaction.script $pkgdir/usr/share/libalpm/$_hook-pretransaction
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-install.hook $pkgdir/usr/share/libalpm/hooks/$_hook-install.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-install.script $pkgdir/usr/share/libalpm/$_hook-install
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-upgrade.hook $pkgdir/usr/share/libalpm/hooks/$_hook-upgrade.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-upgrade.script $pkgdir/usr/share/libalpm/$_hook-upgrade
+install -Dm644 $srcdir/$_theme-$_commit/$_hook-remove.hook $pkgdir/usr/share/libalpm/hooks/$_hook-remove.hook
+install -Dm755 $srcdir/$_theme-$_commit/$_hook-remove.script $pkgdir/usr/share/libalpm/$_hook-remove
 }
 
