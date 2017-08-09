@@ -1,16 +1,16 @@
-#!/usr/bin
+#!/bin/bash
 
 #Used directory
-gnome-dir=/usr/share/gnome-shell/
-theme-dir=/usr/share/themes/Adapta-Breath/gnome-shell
+gnomedir=/usr/share/gnome-shell
+themedir=/usr/share/themes/Adapta-Breath/gnome-shell
 theme=gnome-shell-theme.gresource
 
 #Upgrade GDM theme
 
-cmp $gnome-dir/$theme $theme-dir/$theme 
+cmp $gnomedir/$theme $themedir/$theme 
 
 if [ $? == 1 ]; then
-   cp -f $theme-dir/$theme $gnome-dir/$theme
+   cp -f $themedir/$theme $gnomedir/$theme
 fi
 
 exit 0

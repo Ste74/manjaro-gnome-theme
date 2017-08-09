@@ -1,19 +1,20 @@
-#!/usr/bin
+#!/bin/bash
 
 #Used directory
-gnome-dir=/usr/share/gnome-shell/
-theme-dir=/usr/share/themes/Adapta-Breath/gnome-shell
+gnomedir=/usr/share/gnome-shell
+themedir=/usr/share/themes/Adapta-Breath/gnome-shell
 theme=gnome-shell-theme.gresource
 
 #Install GDM theme
 
-cd $gnome-dir
+cd $gnomedir
 
-if [ -e $theme ]; then
+if [ -f $theme ]; then
    mv $theme $theme.old
 fi
 
-cp $theme-dir/$theme $gnome-dir/$theme
+cp $themedir/$theme $gnomedir/$theme
 
 exit 0
+
 
