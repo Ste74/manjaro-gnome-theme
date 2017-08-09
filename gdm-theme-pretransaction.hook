@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Type = File
+Target = /usr/share/gnome-shell/*
+
+[Action]
+Description = Manjaro GDM theme pretransaction
+When = PreTransaction
+Exec = /usr/share/libalpm/scripts/gdm-theme-pretransaction

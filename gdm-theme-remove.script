@@ -1,0 +1,18 @@
+#!/usr/bin
+
+#Used directory
+gnome-dir=/usr/share/gnome-shell/
+theme-dir=/usr/share/themes/Adapta-Breath/gnome-shell
+theme=gnome-shell-theme.gresource
+
+#Remove GDM theme
+
+cd $gnome-dir
+if [ -f $theme.old ]; then
+   rm $theme
+   mv $theme.old $theme
+else
+   echo "Backupped GDM theme not present"
+fi
+
+exit 0

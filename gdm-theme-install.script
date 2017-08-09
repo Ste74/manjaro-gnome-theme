@@ -1,0 +1,13 @@
+#!/usr/bin
+
+#Used directory
+gnome-dir=/usr/share/gnome-shell/
+theme-dir=/usr/share/themes/Adapta-Breath/gnome-shell
+theme=gnome-shell-theme.gresource
+
+#Install GDM theme
+
+cp $theme-dir/$theme $gnome-dir/$theme
+
+exit 0
+
