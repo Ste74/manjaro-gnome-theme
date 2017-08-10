@@ -8,4 +8,4 @@ Target = gnome-shell
 [Action]
 Description = Manjaro GDM breath theme install
 When = PostTransaction
-Exec = /usr/share/libalpm/scripts/gdm-theme-install
+Exec = /usr/share/libalpm/scripts/gdm-theme-maia-install
