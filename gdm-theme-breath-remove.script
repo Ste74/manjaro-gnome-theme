@@ -12,7 +12,7 @@ if [ -f $theme.old ]; then
    rm $theme
    mv $theme.old $theme
 else
-   echo "Backupped GDM theme not present"
+   echo "Backup GDM theme not present"
 fi
 
 exit 0

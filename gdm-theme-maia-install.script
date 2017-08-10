@@ -2,7 +2,7 @@
 
 #Used directory
 gnomedir=/usr/share/gnome-shell
-themedir=/usr/share/themes/Adapta-Breath/gnome-shell
+themedir=/usr/share/themes/Adapta-Maia/gnome-shell
 theme=gnome-shell-theme.gresource
 
 #Install & Upgrade GDM theme
