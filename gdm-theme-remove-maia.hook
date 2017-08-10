@@ -1,9 +1,9 @@
 [Trigger]
 Operation = Remove
-Type = File
-Target = /usr/share/gnome-shell/*
+Type = Package
+Target = manjaro-gdm-theme-maia-dev
 
 [Action]
 Description = Remove Manjaro GDM theme
 When = PostTransaction
-Exec = /usr/share/libalpm/scripts/gdm-theme-remove
+Exec = /usr/share/libalpm/scripts/gdm-theme-remove-maia

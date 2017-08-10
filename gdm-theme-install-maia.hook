@@ -2,7 +2,7 @@
 Operation = Install
 Operation = Upgrade
 Type = Package
-Target = manjaro-gdm-breath-theme-dev
+Target = manjaro-gdm-maia-theme-dev
 Target = gnome-shell
 
 [Action]
