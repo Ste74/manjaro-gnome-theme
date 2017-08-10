@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = manjaro-gdm-breath-theme-dev
+Target = gnome-shell
+
+[Action]
+Description = Manjaro GDM breath theme install
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/gdm-theme-install

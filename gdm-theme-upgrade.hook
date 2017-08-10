@@ -1,9 +1,0 @@
-[Trigger]
-Operation = Upgrade
-Type = File
-Target = /usr/share/gnome-shell/*
-
-[Action]
-Description = Upgrade Manjaro GDM theme
-When = PostTransaction
-Exec = /usr/share/libalpm/scripts/gdm-theme-upgrade

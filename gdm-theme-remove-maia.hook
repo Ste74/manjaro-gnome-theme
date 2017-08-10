@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Remove
+Type = File
+Target = /usr/share/gnome-shell/*
+
+[Action]
+Description = Remove Manjaro GDM theme
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/gdm-theme-remove
