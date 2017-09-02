@@ -4,14 +4,26 @@
 gnomedir=/usr/share/gnome-shell
 themedir=/usr/share/themes/Adapta-Breath/gnome-shell
 theme=gnome-shell-theme.gresource
+appicondir=/usr/share/themes/Adapta-Breath/gnome-shell/assets
 
-#Install & Upgrade GDM theme
+#Install & Upgrade GDM theme and icons
 
 cd $gnomedir
 
 install() {
-mv $theme $theme.old
+#install gdm theme
+mv $theme $theme.old 
 cp -f $themedir/$theme $gnomedir/$theme
+#install app icon for dash to dock
+cd $appicondir
+#save original svg file
+for i in $(ls show*.svg); do
+	mv $i $i.old
+done
+#copy the manjaro icon
+for i in $(ls show*.new); do
+	cp $i ${i::(-4)}
+done
 }
 
 upgrade() {
@@ -26,6 +38,4 @@ if [ ! -e $theme.old ]; then
 else
 	upgrade
 fi
-
-	
 
