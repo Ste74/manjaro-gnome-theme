@@ -1,7 +1,7 @@
 [Trigger]
 Operation = Remove
 Type = Package
-Target = manjaro-gdm-breath-theme-dev
+Target = manjaro-gnome-breath-theme
 
 [Action]
 Description = Remove Manjaro GDM theme

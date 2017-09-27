@@ -1,7 +1,7 @@
 [Trigger]
 Operation = Remove
 Type = Package
-Target = manjaro-gdm-theme-maia-dev
+Target = manjaro-gnome-maia-theme
 
 [Action]
 Description = Remove Manjaro GDM theme
