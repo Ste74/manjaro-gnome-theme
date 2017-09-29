@@ -2,7 +2,7 @@
 
 #Used directory
 
-theme="Adapta-Maia Adapta-Nokto-Maia Adapta-Eta-Maia Adapta-Nokto-Eta-Maia"
+themes="Adapta-Maia Adapta-Nokto-Maia Adapta-Eta-Maia Adapta-Nokto-Eta-Maia"
 gnomedir=/usr/share/gnome-shell
 theme=gnome-shell-theme.gresource
 
@@ -16,9 +16,11 @@ else
    echo "Backup GDM theme not present"
 fi
 
-for i in $theme; do
+for i in $themes; do
 	cd /usr/share/themes/$i/gnome-shell/assets
 	rm show*.svg 
-	mv show*.old show*.svg
+	for f in show*.old; do 
+		mv -- "$f" "${f%.old}.svg"
+	done
 done
 

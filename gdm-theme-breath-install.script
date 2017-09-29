@@ -2,7 +2,7 @@
 
 #Used directory
 
-theme="Adapta-Breath Adapta-Nokto-Breath Adapta-Eta-Breath Adapta-Nokto-Eta-Breath"
+themes="Adapta-Breath Adapta-Nokto-Breath Adapta-Eta-Breath Adapta-Nokto-Eta-Breath"
 gnomedir=/usr/share/gnome-shell
 themedir=/usr/share/themes/Adapta-Breath/gnome-shell
 theme=gnome-shell-theme.gresource
@@ -17,9 +17,11 @@ install() {
 mv $theme $theme.old 
 cp -f $themedir/$theme $gnomedir/$theme
 #install app icon for dash to dock
-for i in $theme; do
+for i in $themes; do
 	cd /usr/share/themes/$i/gnome-shell/assets
-	mv show*.svg show*.old
+	for f in show*.svg; do 
+		mv -- "$f" "${f%.svg}.old"
+	done
 	cp $appicondir/*.svg /usr/share/themes/$i/gnome-shell/assets
 done
 }
@@ -31,9 +33,8 @@ cmp --silent $gnomedir/$theme $themedir/$theme
 	fi
 }
 
-if [ ! -e $theme.old ]; then
+if [ ! -e $theme.old -o ! -e "/usr/share/themes/Adapta-Maia/gnome-shell/assets/show*.svg" ]; then
 	install
 else
 	upgrade
 fi
-
