@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #Used directory
+
+theme="Adapta-Breath Adapta-Nokto-Breath Adapta-Eta-Breath Adapta-Nokto-Eta-Breath"
 gnomedir=/usr/share/gnome-shell
-themedir=/usr/share/themes/Adapta-Breath/gnome-shell
 theme=gnome-shell-theme.gresource
-appicondir=/usr/share/themes/Adapta-Breath/gnome-shell/assets
 
 #Remove GDM theme and icons
 
@@ -16,10 +16,8 @@ else
    echo "Backup GDM theme not present"
 fi
 
-cd $appincondir
-for i in $(ls show*.old); do
-	cp -f $i ${i::(-4)}
-	rm $i
+for i in $theme; do
+	cd /usr/share/themes/$i/gnome-shell/assets
+	rm show*.svg 
+	mv show*.old show*.svg
 done
-
-exit 0
