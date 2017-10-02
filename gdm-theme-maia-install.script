@@ -33,7 +33,7 @@ cmp --silent $gnomedir/$theme $themedir/$theme
 	fi
 }
 
-if [ ! -e $theme.old -o ! -e "/usr/share/themes/Adapta-Maia/gnome-shell/assets/show*.svg" ]; then
+if [ ! -e $theme.old ]; then
 	install
 else
 	upgrade
