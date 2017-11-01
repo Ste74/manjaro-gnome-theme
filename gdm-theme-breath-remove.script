@@ -16,10 +16,10 @@ else
    echo "Backup GDM theme not present"
 fi
 
-for i in $themes; do
-	cd /usr/share/themes/$i/gnome-shell/assets
-	rm show*.svg 
-	for f in show*.old; do 
-		mv -- "$f" "${f%.old}.svg"
-	done
-done
+#for i in $themes; do
+#	cd /usr/share/themes/$i/gnome-shell/assets
+#	rm show*.svg 
+#	for f in show*.old; do 
+#		mv -- "$f" "${f%.old}.svg"
+#	done
+#done

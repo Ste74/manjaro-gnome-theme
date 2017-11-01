@@ -17,13 +17,13 @@ install() {
 mv $theme $theme.old 
 cp -f $themedir/$theme $gnomedir/$theme
 #install app icon for dash to dock
-for i in $themes; do
-	cd /usr/share/themes/$i/gnome-shell/assets
-	for f in show*.svg; do 
-		mv -- "$f" "${f%.svg}.old"
-	done
-	cp $appicondir/*.svg /usr/share/themes/$i/gnome-shell/assets
-done
+#for i in $themes; do
+#	cd /usr/share/themes/$i/gnome-shell/assets
+#	for f in show*.svg; do 
+#		mv -- "$f" "${f%.svg}.old"
+#	done
+#	cp $appicondir/*.svg /usr/share/themes/$i/gnome-shell/assets
+#done
 }
 
 upgrade() {
