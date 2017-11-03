@@ -24,7 +24,7 @@ cp -f $themedir/$theme $gnomedir/$theme
 #	done
 #	cp $appicondir/*.svg /usr/share/themes/$i/gnome-shell/assets
 #done
-#}
+}
 
 upgrade() {
 cmp --silent $gnomedir/$theme $themedir/$theme 
