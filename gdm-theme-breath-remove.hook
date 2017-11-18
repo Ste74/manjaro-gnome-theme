@@ -1,9 +1,0 @@
-[Trigger]
-Operation = Remove
-Type = Package
-Target = manjaro-gnome-breath-theme
-
-[Action]
-Description = Remove Manjaro GDM theme
-When = PreTransaction
-Exec = /usr/share/libalpm/scripts/gdm-theme-breath-remove

@@ -2,11 +2,11 @@
 
 #Used directory
 
-themes="Adapta-Maia Adapta-Nokto-Maia Adapta-Eta-Maia Adapta-Nokto-Eta-Maia"
+#themes="Adapta-Maia Adapta-Nokto-Maia Adapta-Eta-Maia Adapta-Nokto-Eta-Maia"
 gnomedir=/usr/share/gnome-shell
-themedir=/usr/share/themes/Adapta-Maia/gnome-shell
+themedir=/usr/share/themes/manjaro-gnome-maia-theme
 theme=gnome-shell-theme.gresource
-appicondir=/usr/share/themes/manjaro-gnome-theme
+#appicondir=/usr/share/themes/manjaro-gnome-theme
 
 #Install & Upgrade GDM theme and icons
 
