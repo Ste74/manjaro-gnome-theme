@@ -48,7 +48,7 @@
       <stop
          id="stop77463"
          offset="0"
-         style="stop-color:#182f4c;stop-opacity:1" />
+         style="stop-color:#16a085;stop-opacity:1" />
       <stop
          id="stop77465"
          offset="1"
@@ -152,7 +152,7 @@
            height="25"
            width="98"
            id="rect38000"
-           style="color:#000000;fill:url(#linearGradient77551);fill-opacity:1;fill-rule:nonzero;stroke:#182f4c;stroke-width:1.37920964;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+           style="color:#000000;fill:url(#linearGradient77551);fill-opacity:1;fill-rule:nonzero;stroke:#16a085;stroke-width:1.37920964;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       </g>
       <g
          transform="translate(2.0625,-2)"
