@@ -9,6 +9,8 @@
     <file>checkbox-off.svg</file>
     <file>checkbox.svg</file>
     <file>close-window.svg</file>
+    <file>close-window-active.svg</file>
+    <file>close-window-hover.svg</file>
     <file>close.svg</file>
     <file>corner-ripple-ltr.png</file>
     <file>corner-ripple-rtl.png</file>
@@ -17,11 +19,18 @@
     <file>filter-selected-rtl.svg</file>
     <file>gnome-shell.css</file>
     <file>gnome-shell-high-contrast.css</file>
+    <file>key-enter.svg</file>
+    <file>key-hide.svg</file>
+    <file>key-layout.svg</file>
+    <file>key-shift.svg</file>
+    <file>key-shift-uppercase.svg</file>
+    <file>key-shift-latched-uppercase.svg</file>
     <file>logged-in-indicator.svg</file>
-    <file>more-results.svg</file>
+    <file alias="icons/message-indicator-symbolic.svg">message-indicator-symbolic.svg</file>
     <file>no-events.svg</file>
     <file>no-notifications.svg</file>
     <file>noise-texture.png</file>
+    <file>pad-osd.css</file>
     <file>page-indicator-active.svg</file>
     <file>page-indicator-inactive.svg</file>
     <file>page-indicator-checked.svg</file>
@@ -32,9 +41,10 @@
     <file>summary-counter.svg</file>
     <file>toggle-off-us.svg</file>
     <file>toggle-off-intl.svg</file>
-    <file>toggle-on-hc.svg</file>
+    <file>toggle-off-hc.svg</file>
     <file>toggle-on-us.svg</file>
     <file>toggle-on-intl.svg</file>
+    <file>toggle-on-hc.svg</file>
     <file>ws-switch-arrow-up.png</file>
     <file>ws-switch-arrow-down.png</file>
   </gresource>

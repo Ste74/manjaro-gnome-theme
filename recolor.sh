@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
-# Adwaita color
+
+## Adwaita color
 
 #1862af
 #3465a4
@@ -19,8 +20,10 @@ set -x
 #256ab1
 #4a90d9
 #182f4c
-
-
+#2975c4
+#4a90d9
+#006098
+#205b9a
 
 
 find . -type f -name '*.svg' -exec sed -i \
@@ -29,6 +32,9 @@ find . -type f -name '*.svg' -exec sed -i \
 	s/#1862af/#64FFA4/Ig;\
 	s/#3465a4/#64FFA4/Ig;\
 	s/#182f4c/#16a085/Ig;\
+	s/#2975c4/#16a085/Ig;\
+	s/#4a90d9/#16a085/Ig;\
+	s/#006098/#16a085/Ig;\
 	s/205b9a/#64FFA4/Ig" {} \;
 
 find . -type f -name '*.css' -exec sed -i \
