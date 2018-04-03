@@ -4,8 +4,10 @@
     <file>gnome-shell.css</file>
     <file>gnome-shell-high-contrast.css</file>
     <file>noise-texture.png</file>
+    <file>branding.png</file>
     <file>pad-osd.css</file>
     <file>key-enter.svg</file>
+    <file>key-enter-active.svg</file>
     <file>key-hide.svg</file>
     <file>key-layout.svg</file>
     <file>key-shift.svg</file>

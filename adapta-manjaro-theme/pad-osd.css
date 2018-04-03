@@ -1,30 +1,30 @@
-.Leader { 
-  stroke-width: .5 !important; 
-  stroke: #4db6ac 
-  fill: none !important; 
+.Leader {
+    stroke-width: .5 !important;
+    stroke: #16A085;
+    fill: none !important;
 }
 
-.Button { 
-  stroke-width: .25; 
-  stroke: #ededed; 
-  fill: #ededed; 
+.Button {
+    stroke-width: .25;
+    stroke: #ededed;
+    fill: #2c383e;
 }
 
-.Ring { 
-  stroke-width: .5 !important; 
-  stroke: #4db6ac !important; 
-  fill: none !important; 
+.Ring {
+    stroke-width: .5 !important;
+    stroke: #16A085 !important;
+    fill: none !important;
 }
 
-.Label { 
-  stroke-width: .1 !important; 
-  stroke: none !important; 
-  fill: transparent !important; 
-  font-size: .1 !important; 
+.Label {
+    stroke: none !important;
+    stroke-width: .1 !important;
+    font-size: .1 !important;
+    fill: transparent !important;
 }
 
-.TouchStrip, .TouchRing { 
-  stroke-width: .1 !important; 
-  stroke: #ededed !important; 
-  fill: #4db6ac !important; 
+.TouchStrip, .TouchRing {
+    stroke-width: .1 !important;
+    stroke: #ededed !important;
+    fill: #2c383e !important;
 }
