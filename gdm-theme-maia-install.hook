@@ -2,10 +2,10 @@
 Operation = Install
 Operation = Upgrade
 Type = Package
-Target = manjaro-gnome-maia-theme
+Target = manjaro-gdm-18.0-theme-dev
 Target = gnome-shell
 
 [Action]
-Description = Manjaro GDM breath theme install
+Description = Manjaro GDM theme install
 When = PostTransaction
 Exec = /usr/share/libalpm/scripts/gdm-theme-maia-install

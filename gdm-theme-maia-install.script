@@ -2,11 +2,9 @@
 
 #Used directory
 
-#themes="Adapta-Maia Adapta-Nokto-Maia Adapta-Eta-Maia Adapta-Nokto-Eta-Maia"
 gnomedir=/usr/share/gnome-shell
-themedir=/usr/share/themes/manjaro-gnome-maia-theme
+themedir=/usr/share/themes/manjaro-gdm-18.0-theme
 theme=gnome-shell-theme.gresource
-#appicondir=/usr/share/themes/manjaro-gnome-theme
 
 #Install & Upgrade GDM theme and icons
 
@@ -16,14 +14,6 @@ install() {
 #install gdm theme
 mv $theme $theme.old 
 cp -f $themedir/$theme $gnomedir/$theme
-#install app icon for dash to dock
-#for i in $themes; do
-#	cd /usr/share/themes/$i/gnome-shell/assets
-#	for f in show*.svg; do 
-#		mv -- "$f" "${f%.svg}.old"
-#	done
-#	cp $appicondir/*.svg /usr/share/themes/$i/gnome-shell/assets
-#done
 }
 
 upgrade() {
