@@ -19,7 +19,7 @@ stage { font-size: 10pt; font-family: Roboto, Noto Sans, Sans-Serif; color: #CFD
     color: #CFD8DC;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    box-shadow: inset 0px 0px 0px 1px #215d9c; }
+    box-shadow: inset 0px 0px 0px 1px #16a085; }
   .button:insensitive {
     color: #949796;
     border-color: rgba(0, 0, 0, 0.7);
@@ -62,7 +62,7 @@ stage { font-size: 10pt; font-family: Roboto, Noto Sans, Sans-Serif; color: #CFD
     color: #CFD8DC;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    box-shadow: inset 0px 0px 0px 1px #215d9c; }
+    box-shadow: inset 0px 0px 0px 1px #16a085; }
   .modal-dialog-linked-button:first-child {
     border-radius: 0px 0px 0px 6px; }
   .modal-dialog-linked-button:last-child {
@@ -1568,7 +1568,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .screen-shield-background { background: black; box-shadow: 0 11px 12px rgba(0, 0, 0, 0.41); }
 
-#lockDialogGroup { background: #222d32 url("branding.png"); background-center: center; }
+#lockDialogGroup { background: #222d32 url("branding.svg"); background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle { background-color: rgba(207, 216, 220, 0.297); }
 
