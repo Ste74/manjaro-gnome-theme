@@ -63,23 +63,23 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .check-box StBoxLayout { spacing: 0.8em; }
 
-.check-box StBin { width: 20px; height: 20px; background-image: url("assets/checkbox-off.svg"); color: rgba(207, 216, 220, 0.87); }
+.check-box StBin { width: 20px; height: 20px; background-image: url("resource:///org/gnome/shell/theme/assets/checkbox-off.svg"); color: rgba(207, 216, 220, 0.87); }
 
-.check-box:focus StBin { background-image: url("assets/checkbox-off-hover.svg"); color: #CFD8DC; }
+.check-box:focus StBin { background-image: url("resource:///org/gnome/shell/theme/assets/checkbox-off-hover.svg"); color: #CFD8DC; }
 
-.check-box:checked StBin { background-image: url("assets/checkbox.svg"); color: #CFD8DC; }
+.check-box:checked StBin { background-image: url("resource:///org/gnome/shell/theme/assets/checkbox.svg"); color: #CFD8DC; }
 
-.check-box:focus:checked StBin { background-image: url("assets/checkbox-hover.svg"); color: #CFD8DC; }
+.check-box:focus:checked StBin { background-image: url("resource:///org/gnome/shell/theme/assets/checkbox-hover.svg"); color: #CFD8DC; }
 
 .toggle-switch { width: 40px; height: 20px; background-size: contain; }
 
-.toggle-switch-us { background-image: url("toggle-off.svg"); }
+.toggle-switch-us { background-image: url("resource:///org/gnome/shell/theme/toggle-off.svg"); }
 
-.toggle-switch-us:checked { background-image: url("toggle-on.svg"); }
+.toggle-switch-us:checked { background-image: url("resource:///org/gnome/shell/theme/toggle-on.svg"); }
 
-.toggle-switch-intl { background-image: url("toggle-off.svg"); }
+.toggle-switch-intl { background-image: url("resource:///org/gnome/shell/theme/toggle-off.svg"); }
 
-.toggle-switch-intl:checked { background-image: url("toggle-on.svg"); }
+.toggle-switch-intl:checked { background-image: url("resource:///org/gnome/shell/theme/toggle-on.svg"); }
 
 .shell-link { border-radius: 2px; color: #6bb2a7; }
 
@@ -373,9 +373,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .workspace-switcher-group { padding: 8px; }
 
-.ws-switcher-active-up { height: 36px; background-color: rgba(77, 182, 172, 0.25); background-image: url("assets/go-up.svg"); background-size: 24px; border-radius: 2px; }
+.ws-switcher-active-up { height: 36px; background-color: rgba(77, 182, 172, 0.25); background-image: url("resource:///org/gnome/shell/theme/assets/go-up.svg"); background-size: 24px; border-radius: 2px; }
 
-.ws-switcher-active-down { height: 36px; background-color: rgba(77, 182, 172, 0.25); background-image: url("assets/go-down.svg"); background-size: 24px; border-radius: 2px; }
+.ws-switcher-active-down { height: 36px; background-color: rgba(77, 182, 172, 0.25); background-image: url("resource:///org/gnome/shell/theme/assets/go-down.svg"); background-size: 24px; border-radius: 2px; }
 
 .ws-switcher-box { height: 36px; border: 2px solid rgba(207, 216, 220, 0.2); border-radius: 2px; background: transparent; }
 
@@ -501,21 +501,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .pager-button:active { background-color: rgba(207, 216, 220, 0.25); }
 
-.calendar-change-month-back { background-image: url("assets/calendar-arrow-left.svg"); }
+.calendar-change-month-back { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-left.svg"); }
 
-.calendar-change-month-back:hover, .calendar-change-month-back:focus { background-image: url("assets/calendar-arrow-left-hover.svg"); }
+.calendar-change-month-back:hover, .calendar-change-month-back:focus { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-left-hover.svg"); }
 
-.calendar-change-month-back:rtl { background-image: url("assets/calendar-arrow-right.svg"); }
+.calendar-change-month-back:rtl { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-right.svg"); }
 
-.calendar-change-month-back:rtl:hover, .calendar-change-month-back:rtl:focus { background-image: url("assets/calendar-arrow-right-hover.svg"); }
+.calendar-change-month-back:rtl:hover, .calendar-change-month-back:rtl:focus { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-right-hover.svg"); }
 
-.calendar-change-month-forward { background-image: url("assets/calendar-arrow-right.svg"); }
+.calendar-change-month-forward { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-right.svg"); }
 
-.calendar-change-month-forward:hover, .calendar-change-month-forward:focus { background-image: url("assets/calendar-arrow-right-hover.svg"); }
+.calendar-change-month-forward:hover, .calendar-change-month-forward:focus { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-right-hover.svg"); }
 
-.calendar-change-month-forward:rtl { background-image: url("assets/calendar-arrow-left.svg"); }
+.calendar-change-month-forward:rtl { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-left.svg"); }
 
-.calendar-change-month-forward:rtl:hover, .calendar-change-month-forward:rtl:focus { background-image: url("assets/calendar-arrow-left-hover.svg"); }
+.calendar-change-month-forward:rtl:hover, .calendar-change-month-forward:rtl:focus { background-image: url("resource:///org/gnome/shell/theme/assets/calendar-arrow-left-hover.svg"); }
 
 .calendar-day-base { font-size: 9pt; width: 2.4em; height: 2.4em; padding: 0; margin: 0.2em; border-radius: 100px; text-align: center; transition-duration: 0.1s; }
 
@@ -619,9 +619,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .message-media-control { padding: 0 8px; margin: 0 6px; border-radius: 100px; color: rgba(129, 196, 191, 0.87); background: transparent; background-size: 32px 32px; }
 
-.message-media-control:hover { color: #81c4bf; background-image: url("assets/media-control-hover.svg"); background-size: 32px 32px; }
+.message-media-control:hover { color: #81c4bf; background-image: url("resource:///org/gnome/shell/theme/assets/media-control-hover.svg"); background-size: 32px 32px; }
 
-.message-media-control:active { color: #81c4bf; background-image: url("assets/media-control-active.svg"); background-size: 32px 32px; }
+.message-media-control:active { color: #81c4bf; background-image: url("resource:///org/gnome/shell/theme/assets/media-control-active.svg"); background-size: 32px 32px; }
 
 .message-media-control:insensitive { color: rgba(129, 196, 191, 0.28); background-image: none; background: transparent; }
 
@@ -633,7 +633,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu .message:hover .media-message-cover-icon.fallback, .popup-menu .message:focus .media-message-cover-icon.fallback, .popup-menu .message:active .media-message-cover-icon.fallback { color: rgba(207, 216, 220, 0.87); background-color: rgba(77, 182, 172, 0.25); }
 
-#appMenu { spinner-image: url("process-working.svg"); padding: 0 6px; }
+#appMenu { spinner-image: url("resource:///org/gnome/shell/theme/process-working.svg"); padding: 0 6px; }
 
 #appMenu StLabel { padding: 0 2px; }
 
@@ -651,15 +651,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .system-menu-action > StIcon { icon-size: 16px; }
 
-.ripple-box { width: 52px; height: 52px; background-image: url("assets/corner-ripple-ltr.svg"); background-size: contain; }
+.ripple-box { width: 52px; height: 52px; background-image: url("resource:///org/gnome/shell/theme/assets/corner-ripple-ltr.svg"); background-size: contain; }
 
-.ripple-box:rtl { background-image: url("assets/corner-ripple-rtl.svg"); }
+.ripple-box:rtl { background-image: url("resource:///org/gnome/shell/theme/assets/corner-ripple-rtl.svg"); }
 
-.window-close { height: 32px; width: 32px; -shell-close-overlap: 24px; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); background-image: url("assets/window-close.svg"); background-size: 32px; }
+.window-close { height: 32px; width: 32px; -shell-close-overlap: 24px; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); background-image: url("resource:///org/gnome/shell/theme/assets/window-close.svg"); background-size: 32px; }
 
-.window-close:hover { background-image: url("assets/window-close-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
+.window-close:hover { background-image: url("resource:///org/gnome/shell/theme/assets/window-close-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
-.window-close:active { background-image: url("assets/window-close-active.svg"); }
+.window-close:active { background-image: url("resource:///org/gnome/shell/theme/assets/window-close-active.svg"); }
 
 .nm-dialog { max-height: 34em; min-height: 28em; min-width: 34em; }
 
@@ -793,7 +793,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dash:rtl { border-radius: 2px 0 0 2px; }
 
-#dash .placeholder { height: 24px; background-image: url("assets/dash-placeholder.svg"); background-size: contain; }
+#dash .placeholder { height: 24px; background-image: url("resource:///org/gnome/shell/theme/assets/dash-placeholder.svg"); background-size: contain; }
 
 #dash .empty-dash-drop-target { width: 24px; height: 24px; }
 
@@ -841,11 +841,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .app-well-app-running-dot { width: 32px; height: 2px; margin-bottom: 0; background-color: #16a085; }
 
-.show-apps .show-apps-icon { border: none; background-image: url("assets/show-apps.svg"); background-size: contain; color: transparent; transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
+.show-apps .show-apps-icon { border: none; background-image: url("resource:///org/gnome/shell/theme/assets/show-apps.svg"); background-size: contain; color: transparent; transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
 
-.show-apps:hover .show-apps-icon, .show-apps:active .show-apps-icon, .show-apps:focus .show-apps-icon { color: transparent; background-image: url("assets/show-apps-hover.svg"); transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
+.show-apps:hover .show-apps-icon, .show-apps:active .show-apps-icon, .show-apps:focus .show-apps-icon { color: transparent; background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-hover.svg"); transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
 
-.show-apps:checked .show-apps-icon { color: transparent; background-image: url("assets/show-apps-checked.svg"); transition-duration: 0s; -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
+.show-apps:checked .show-apps-icon { color: transparent; background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-checked.svg"); transition-duration: 0s; -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
 .app-well-app.app-folder > .overview-icon { background-color: rgba(207, 216, 220, 0.12); box-shadow: 0 0 transparent; }
 
@@ -1009,27 +1009,27 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .keyboard-key.default-key:active { background-color: #4a5459; color: #CFD8DC; transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
 
-.keyboard-key.enter-key { background-color: #009688; background-image: url("key-enter.svg"); }
+.keyboard-key.enter-key { background-color: #009688; background-image: url("resource:///org/gnome/shell/theme/key-enter.svg"); }
 
-.keyboard-key.enter-key:focus, .keyboard-key.enter-key:hover, .keyboard-key.enter-key:checked { background-color: #1fa396; background-image: url("key-enter-active.svg"); }
+.keyboard-key.enter-key:focus, .keyboard-key.enter-key:hover, .keyboard-key.enter-key:checked { background-color: #1fa396; background-image: url("resource:///org/gnome/shell/theme/key-enter-active.svg"); }
 
-.keyboard-key.enter-key:active { background-color: #16a085; background-image: url("key-enter-active.svg"); }
+.keyboard-key.enter-key:active { background-color: #16a085; background-image: url("resource:///org/gnome/shell/theme/key-enter-active.svg"); }
 
-.keyboard-key.shift-key-lowercase { background-image: url("key-shift.svg"); }
+.keyboard-key.shift-key-lowercase { background-image: url("resource:///org/gnome/shell/theme/key-shift.svg"); }
 
-.keyboard-key.shift-key-uppercase { background-image: url("key-shift-uppercase.svg"); }
+.keyboard-key.shift-key-uppercase { background-image: url("resource:///org/gnome/shell/theme/key-shift-uppercase.svg"); }
 
 .keyboard-key.shift-key-uppercase:focus, .keyboard-key.shift-key-uppercase:hover, .keyboard-key.shift-key-uppercase:checked { background-color: #1d3638; }
 
 .keyboard-key.shift-key-uppercase:active { background-color: #1c4643; }
 
-.keyboard-key.shift-key-uppercase:latched { background-image: url("key-shift-latched-uppercase.svg"); background-color: #1d3638; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.keyboard-key.shift-key-uppercase:latched { background-image: url("resource:///org/gnome/shell/theme/key-shift-latched-uppercase.svg"); background-color: #1d3638; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
 .keyboard-key.shift-key-uppercase:latched:focus, .keyboard-key.shift-key-uppercase:latched:hover { background-color: #1c4643; }
 
-.keyboard-key.hide-key { background-image: url("key-hide.svg"); }
+.keyboard-key.hide-key { background-image: url("resource:///org/gnome/shell/theme/key-hide.svg"); }
 
-.keyboard-key.layout-key { background-image: url("key-layout.svg"); }
+.keyboard-key.layout-key { background-image: url("resource:///org/gnome/shell/theme/key-layout.svg"); }
 
 .keyboard-subkeys { padding: 0; border-radius: 2px; -arrow-border-radius: 0; -arrow-background-color: transparent; -arrow-border-width: 0; -arrow-border-color: transparent; -arrow-base: 0; -arrow-rise: 0; -boxpointer-gap: 8px; background-color: #009688; color: #FFFFFF; box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
@@ -1225,7 +1225,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .screen-shield-background { background: black; box-shadow: 0 14px 19px rgba(0, 0, 0, 0.5); }
 
-#lockDialogGroup { background: #222d32 url("branding.svg"); background-repeat: repeat; }
+#lockDialogGroup { background: #222d32 url("resource:///org/gnome/shell/theme/noise-texture.png"); background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle { background-color: rgba(207, 216, 220, 0.297); }
 
@@ -1409,134 +1409,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.transparent { background-color: rgba(19, 25, 28, 0.01); transition-timing-function: cubic-bezier(0, 0, 0.2, 1); transition-duration: 0.4s; }
 
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running1, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-top.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-top-focused.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running1, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-top.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-top-focused.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running2, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-top.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-top-focused.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running2, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-top.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-top-focused.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running3, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-top.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-top-focused.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running3, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-top.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-top-focused.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running4, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-top.svg"); }
-
-#dashtodockContainer.top:ltr .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.top:ltr .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-top-focused.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running4, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-top.svg"); }
-
-#dashtodockContainer.top:rtl .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.top:rtl .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-top-focused.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running1, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-bottom.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running1, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-bottom.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running2, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-bottom.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running2, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-bottom.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running3, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-bottom.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running3, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-bottom.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running4, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-bottom.svg"); }
-
-#dashtodockContainer.bottom:ltr .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.bottom:ltr .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-bottom-focused.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running4, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-bottom.svg"); }
-
-#dashtodockContainer.bottom:rtl .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.bottom:rtl .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-bottom-focused.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running1, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-left.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-left-focused.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running1, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-right.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-right-focused.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running2, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-left.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-left-focused.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running2, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-right.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-right-focused.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running3, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-left.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-left-focused.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running3, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-right.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-right-focused.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running4, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-left.svg"); }
-
-#dashtodockContainer.left:ltr .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.left:ltr .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-left-focused.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running4, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-right.svg"); }
-
-#dashtodockContainer.left:rtl .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.left:rtl .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-right-focused.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running1, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-right.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-right-focused.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running1, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running1 { background-image: url("assets/dot/running1-left.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running1.focused, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running1.focused { background-image: url("assets/dot/running1-left-focused.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running2, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-right.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-right-focused.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running2, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running2 { background-image: url("assets/dot/running2-left.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running2.focused, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running2.focused { background-image: url("assets/dot/running2-left-focused.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running3, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-right.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-right-focused.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running3, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running3 { background-image: url("assets/dot/running3-left.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running3.focused, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running3.focused { background-image: url("assets/dot/running3-left-focused.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running4, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-right.svg"); }
-
-#dashtodockContainer.right:ltr .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.right:ltr .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-right-focused.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running4, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running4 { background-image: url("assets/dot/running4-left.svg"); }
-
-#dashtodockContainer.right:rtl .dash-item-container > StWidget.running4.focused, #dashtodockContainer.extended.right:rtl .dash-item-container > StWidget.running4.focused { background-image: url("assets/dot/running4-left-focused.svg"); }
-
 #workspacestodockContainer, #workspacestodockContainer:overview, #workspacestodockContainer.fullheight:overview { background-color: rgba(19, 25, 28, 0.01); }
 
 #workspacestodockContainer .workspace-thumbnails, #workspacestodockContainer:overview .workspace-thumbnails, #workspacestodockContainer.fullheight:overview .workspace-thumbnails { background-color: transparent; }
@@ -1557,13 +1429,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop #dashtopanelScrollview .app-well-app:checked .overview-icon, #panel.dashtopanelMainPanel.dashtopanelTop #dashtopanelScrollview .show-apps:checked .overview-icon { background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .show-apps-icon { min-height: 24px; background-image: url("assets/show-apps-panel.svg"); background-size: 32px 32px; transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .show-apps-icon { min-height: 24px; background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel.svg"); background-size: 32px 32px; transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .show-apps-icon { background-image: url("assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .show-apps-icon { background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .show-apps-icon { background-image: url("assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .show-apps-icon { background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
-#panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps .show-apps-icon { background-image: url("assets/show-apps-panel.svg"); }
+#panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps .show-apps-icon { background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel.svg"); }
 
 #panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps:hover .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps:active .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps:focus .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelTop.solid .show-apps:checked .show-apps-icon { -st-background-image-shadow: none; }
 
@@ -1583,12 +1455,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom #dashtopanelScrollview .app-well-app:checked .overview-icon, #panel.dashtopanelMainPanel.dashtopanelBottom #dashtopanelScrollview .show-apps:checked .overview-icon { background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .show-apps-icon { min-height: 24px; background-image: url("assets/show-apps-panel.svg"); background-size: 32px 32px; transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .show-apps-icon { min-height: 24px; background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel.svg"); background-size: 32px 32px; transition-duration: 0s; -st-background-image-shadow: 0 1px 2px rgba(0, 0, 0, 0.28); }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .show-apps-icon { background-image: url("assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .show-apps-icon { background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .show-apps-icon { background-image: url("assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .show-apps-icon { background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel-hover.svg"); -st-background-image-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.34); }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps .show-apps-icon { background-image: url("assets/show-apps-panel.svg"); }
+#panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps .show-apps-icon { background-image: url("resource:///org/gnome/shell/theme/assets/show-apps-panel.svg"); }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps:hover .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps:active .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps:focus .show-apps-icon, #panel.dashtopanelMainPanel.dashtopanelBottom.solid .show-apps:checked .show-apps-icon { -st-background-image-shadow: none; }
