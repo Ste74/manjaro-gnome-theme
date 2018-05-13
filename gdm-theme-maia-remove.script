@@ -9,9 +9,9 @@ theme=gnome-shell-theme.gresource
 
 cd $gnomedir
 if [ -f $theme.old ]; then
-   rm $theme.old
+   rm $theme.old $theme
    rm /var/lib/pacman/db.lck &> /dev/null
-   pacman --noconfirm -S gnome-shell
+   pacman --noconfirm -S gnome-shell &>/dev/null
 else
    echo
    echo "Backup GDM theme not present: re-install gnome-shell is needed"
