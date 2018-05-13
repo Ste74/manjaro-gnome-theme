@@ -10,6 +10,7 @@ theme=gnome-shell-theme.gresource
 cd $gnomedir
 if [ -f $theme.old ]; then
    rm $theme.old $theme
+   rm /var/lib/pacman/db.lck &> /dev/null
    pacman --noconfirm -S gnome-shell
 else
    echo
