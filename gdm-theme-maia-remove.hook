@@ -5,5 +5,5 @@ Target = manjaro-gdm-18.0-theme-dev
 
 [Action]
 Description = Remove Manjaro GDM theme
-When = PreTransaction
+When = PostTransaction
 Exec = /usr/share/libalpm/scripts/gdm-theme-maia-remove
