@@ -12,7 +12,6 @@ cd $gnomedir
 
 install() {
 #install gdm theme
-mv $theme $theme.old 
 cp -f $themedir/$theme $gnomedir/$theme
 }
 
