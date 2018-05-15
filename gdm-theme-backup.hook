@@ -1,5 +1,4 @@
 [Trigger]
-Operation = Install
 Operation = Upgrade
 Type = Package
 Target = gnome-shell

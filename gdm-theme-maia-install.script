@@ -11,7 +11,8 @@ theme=gnome-shell-theme.gresource
 cd $gnomedir
 
 install() {
-#install gdm theme
+#install GDM Maia theme and backup the GDM Gnome
+mv $theme $theme.old 
 cp -f $themedir/$theme $gnomedir/$theme
 }
 
