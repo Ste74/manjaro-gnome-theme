@@ -1,0 +1,20 @@
+#! /bin/sh
+
+##Common files
+manjaro=/usr/share/icons/manjaro/maia/maia.svg
+warning=/usr/share/icons/hicolor/40x40/status/check-warning.png
+
+##Check theme
+while gsettings get org.gnome.desktop.interface gtk-theme | grep -E 'Maia|Breath'; do
+	sleep 30
+done
+
+##Warning window
+yad --title="WARNING" --window-icon=$manjaro --on-top --center --image=$warning --width=475 --fixed --text="
+
+We have detected a change in the Gnome theme.
+To view the new theme correctly, we recommend that you remove the GDM theme:
+
+<b>manjaro-gdm-theme-18.0-dev</b>" --text-align=left --button="Ok";
+
+exit 0
