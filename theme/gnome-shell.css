@@ -1225,7 +1225,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .screen-shield-background { background: black; box-shadow: 0 14px 19px rgba(0, 0, 0, 0.5); }
 
-#lockDialogGroup { background: #222d32 url("branding.svg"); background-repeat: repeat; }
+#lockDialogGroup { background: #222d32 url("branding.svg"); background-size: contain; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle { background-color: rgba(207, 216, 220, 0.297); }
 
