@@ -5,16 +5,24 @@ manjaro=/usr/share/icons/manjaro/maia/maia.svg
 warning=/usr/share/icons/hicolor/40x40/status/check-warning.png
 
 ##Check theme
-while gsettings get org.gnome.desktop.interface gtk-theme | grep -E 'Maia|Breath'; do
-	sleep 30
-done
+if [[ ! -e /$HOME/.config/check-gdm-theme ]]; then
 
-##Warning window
-yad --title="WARNING" --window-icon=$manjaro --on-top --center --image=$warning --width=475 --fixed --text="
+	while gsettings get org.gnome.desktop.interface gtk-theme | grep -E 'Maia|Breath'; do
+		sleep 30
+	done
 
-We have detected a change in the Gnome theme.
-To view the new theme correctly, we recommend that you remove the GDM theme:
+	##Warning window
+	yad --title="WARNING" --window-icon=$manjaro --on-top --center --image=$warning --width=475 --fixed --text="
 
-<b>manjaro-gdm-theme-18.0-dev</b>" --text-align=left --button="Ok";
+	We have detected a change in the Gnome theme.
+	If new theme not working correctly remove this package via <b>pacman</b> or <b>pamac</b>
+
+	<b>manjaro-gdm-theme-18.0-dev</b>
+
+	<b>Note:</b> this pop up will only be shown once" --text-align=left --button="Ok";
+
+	touch /$HOME/.config/check-gdm-theme
+
+fi
 
 exit 0

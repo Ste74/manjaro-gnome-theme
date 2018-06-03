@@ -1,9 +1,30 @@
-.Leader { stroke-width: 0.5 !important; stroke: #4DB6AC !important; fill: none !important; }
+.Leader {
+    stroke-width: .5 !important;
+    stroke: #535353;
+    fill: none !important;
+}
 
-.Button { stroke-width: 0.25; stroke: #4DB6AC; fill: rgba(77, 182, 172, 0.12); }
+.Button {
+    stroke-width: .25;
+    stroke: #ededed;
+    fill: #ededed;
+}
 
-.Ring { stroke-width: 0.5 !important; stroke: #4DB6AC !important; fill: none !important; }
+.Ring {
+    stroke-width: .5 !important;
+    stroke: #535353 !important;
+    fill: none !important;
+}
 
-.Label { stroke-width: 0.1 !important; stroke: none !important; fill: transparent !important; font-size: 0.1 !important; }
+.Label {
+    stroke: none !important;
+    stroke-width: .1 !important;
+    font-size: .1 !important;
+    fill: transparent !important;
+}
 
-.TouchStrip, .TouchRing { stroke-width: 0.1 !important; stroke: #4DB6AC !important; fill: rgba(77, 182, 172, 0.25) !important; }
+.TouchStrip, .TouchRing {
+    stroke-width: .1 !important;
+    stroke: #ededed !important;
+    fill: #535353 !important;
+}
