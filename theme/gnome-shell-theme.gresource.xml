@@ -29,7 +29,7 @@
     <file alias="icons/message-indicator-symbolic.svg">message-indicator-symbolic.svg</file>
     <file>no-events.svg</file>
     <file>no-notifications.svg</file>
-    <file>noise-texture.png</file>
+    <file>noise-texture.svg</file>
     <file>pad-osd.css</file>
     <file>page-indicator-active.svg</file>
     <file>page-indicator-inactive.svg</file>
