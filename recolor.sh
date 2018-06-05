@@ -24,6 +24,7 @@ set -x
 #4a90d9
 #006098
 #205b9a
+#747467
 
 
 find . -type f -name '*.svg' -exec sed -i \
