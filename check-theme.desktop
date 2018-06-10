@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=check-theme
+Name=check-theme
+Comment=Check if Gnome theme is changed
+Type=Application
+Icon=applications-system
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
