@@ -7,6 +7,8 @@ THEME=$(wildcard theme/*)
 INSTD= install -m644
 
 install:
+	install -dm755 $(DESTDIR)$(ICON_DIR)
+	install -m644 $(DESTDIR)$(ICON_DIR)
 	cp .face $(DESTDIR)$(ICON_DIR)
 	install -dm755 $(DESTDIR)$(THEME_DIR)
 	install -m644 $(THEME) $(DESTDIR)$(THEME_DIR)
