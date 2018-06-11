@@ -1,7 +1,7 @@
 [Trigger]
 Operation = Remove
 Type = Package
-Target = manjaro-gdm-18.0-theme-dev
+Target = manjaro-gdm-theme
 
 [Action]
 Description = Remove Manjaro GDM theme

@@ -3,7 +3,7 @@
 #Used directory
 
 gnomedir=/usr/share/gnome-shell
-themedir=/usr/share/themes/manjaro-gdm-18.0-theme
+themedir=/usr/share/themes/manjaro-gdm-theme
 theme=gnome-shell-theme.gresource
 
 #Install & Upgrade GDM theme and icons
