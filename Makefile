@@ -2,7 +2,6 @@ SHELL = /bin/bash
 PREFIX= /usr
 THEME_DIR= $(PREFIX)/share/themes/manjaro-gdm-theme
 ICON_DIR= /etc/skel
-REPODIR=$(CURDIR)
 THEME=$(wildcard theme/*)
 ICON=$(wildcard .face)
 INSTD= install -m644
