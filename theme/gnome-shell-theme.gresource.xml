@@ -27,6 +27,7 @@
     <file>key-shift-latched-uppercase.svg</file>
     <file>logged-in-indicator.svg</file>
     <file alias="icons/message-indicator-symbolic.svg">message-indicator-symbolic.svg</file>
+    <file>branding.png</file>
     <file>no-events.svg</file>
     <file>no-notifications.svg</file>
     <file>noise-texture.png</file>
