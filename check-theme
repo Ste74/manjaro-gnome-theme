@@ -17,7 +17,7 @@ if [[ ! -e /$HOME/.config/check-gdm-theme ]]; then
 	We have detected a change in the Gnome theme.
 	If new theme not working correctly remove this package via <b>pacman</b> or <b>pamac</b>
 
-	<b>manjaro-gdm-theme-18.0-dev</b>
+	<b>manjaro-gdm-theme</b>
 
 	<b>Note:</b> this pop up will only be shown once" --text-align=left --button="Ok";
 
