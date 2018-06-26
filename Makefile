@@ -2,7 +2,7 @@ SHELL = /bin/bash
 PREFIX= /usr
 THEME_DIR= $(PREFIX)/share/themes/manjaro-gdm-theme
 ICON_DIR= /etc/skel
-ICON_GDM= /etc/var/lib/AccountsService/icons
+ICON_GDM= /var/lib/AccountsService/icons
 THEME= $(wildcard theme/*)
 ICON= $(wildcard .face)
 
