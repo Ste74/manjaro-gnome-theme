@@ -13,7 +13,7 @@ install:
 	install -m644 $(ICON) $(DESTDIR)$(ICON_GDM)
 	install -dm755 $(DESTDIR)$(THEME_DIR)
 	install -m644 $(THEME) $(DESTDIR)$(THEME_DIR)
-	cd $(ICON_GDM)
+	cd $(DESTDIR)$(ICON_GDM)
 	mv .face manjaro
 
 uninstall:
