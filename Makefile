@@ -13,10 +13,12 @@ install:
 	install -m644 $(ICON) $(DESTDIR)$(ICON_GDM)
 	install -dm755 $(DESTDIR)$(THEME_DIR)
 	install -m644 $(THEME) $(DESTDIR)$(THEME_DIR)
+	cd $(ICON_GDM)
+	mv .face manjaro
 
 uninstall:
 	rm -f $(DESTDIR)$(ICON_DIR)/.face
 	rm -Rf $(DESTDIR)$(THEME_DIR)
-	rm -f $(DESTDIR)$(ICON_GDM)/.face
+	rm -f $(DESTDIR)$(ICON_GDM)/manjaro
 
 .PHONY: install uninstall
