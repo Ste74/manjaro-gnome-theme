@@ -1591,13 +1591,14 @@ StScrollBar {
 
 /* Auth Dialogs & Screen Shield */
 .framed-user-icon {
+  background-image: url("resource:///org/gnome/shell/theme/manjaro.png");
   background-size: contain;
-  border: 2px solid #eeeeec;
-  color: #eeeeec;
+  border: none;
+  color: transparent;
   border-radius: 3px; }
   .framed-user-icon:hover {
-    border-color: white;
-    color: white; }
+    border-color: transparent;
+    color: transparent; }
 
 .login-dialog-banner-view {
   padding-top: 24px;
