@@ -3,6 +3,7 @@ Operation = Install
 Operation = Upgrade
 Type = Package
 Target = manjaro-gdm-theme
+Target = gnome-shell
 
 [Action]
 Description = Manjaro GDM theme install
