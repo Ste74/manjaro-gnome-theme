@@ -1,0 +1,61 @@
+#!/bin/bash
+set -x
+
+if [[ -d /tmp/shell-theme ]]; then
+	rm -Rf /tmp/shell-theme
+fi
+
+git clone --depth 1 -b gnome-3-30 https://gitlab.gnome.org/GNOME/gnome-shell.git /tmp/shell-theme/
+
+cd /tmp/shell-theme/data
+	cp gnome-shell-theme.gresource.xml /tmp/shell-theme/data/theme/
+	
+cd /tmp/shell-theme/data/theme/
+
+rm noise-texture.png
+
+#Recolor svg files
+find . -type f -name '*.svg' -exec sed -i \
+	"s/#2c1cff/#16a085/Ig;\
+	s/#0000ff/#16a085/Ig;\
+	s/#1862af/#16a085/Ig;\
+	s/#3465a4/#16a085/Ig;\
+	s/#182f4c/#16a085/Ig;\
+	s/#2975c4/#16a085/Ig;\
+	s/#4a90d9/#16a085/Ig;\
+	s/#006098/#16a085/Ig;\
+	s/#205b9a/#16a085/Ig" {} \;
+
+#Recolor css style
+find . -type f -name '*.scss' -exec sed -i \
+	"s/#4a90d9/#16a085/Ig;\
+	s/#006098/#16a085/Ig;\
+	s/#005684/#16a085/Ig" {} \;
+	
+	
+#set array for define css files
+declare -a theme_sources=('gnome-shell-high-contrast.scss' 'gnome-shell.scss' 'gnome-shell-sass/_colors.scss' 'gnome-shell-sass/_common.scss' 'gnome-shell-sass/_drawing.scss' 'gnome-shell-sass/_high-contrast-colors.scss')
+			   
+declare -a styles=('gnome-shell-high-contrast.css' 'gnome-shell.css')
+  	   
+
+for style in ${styles[@]}; do
+	sassc -a $theme_sources $style
+done
+
+#move into my local github
+
+rm -f ~/Github/Manjaro/manjaro-gnome-theme/theme/*.svg
+rm -f ~/Github/Manjaro/manjaro-gnome-theme/theme/*.xml
+rm -f ~/Github/Manjaro/manjaro-gnome-theme/theme/*.css
+
+cp -f /tmp/shell-theme/data/theme/* ~/Github/Manjaro/manjaro-gnome-theme/theme/
+
+cd ~/Github/Manjaro/manjaro-gnome-theme/theme
+
+patch -Np1 -i ../manjaro_face.patch
+
+cd ~/Github/Manjaro/manjaro-gnome-theme/theme/
+	glib-compile-resources gnome-shell-theme.gresource.xml
+	
+
