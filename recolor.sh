@@ -25,6 +25,7 @@ set -x
 #006098
 #205b9a
 
+cd theme
 
 find . -type f -name '*.svg' -exec sed -i \
 	"s/#2c1cff/#16a085/Ig;\
@@ -47,6 +48,5 @@ find . -type f -name '*.css' -exec sed -i \
 	s/4a90d9/#16a085/Ig;\
 	s/33, 93, 156/22, 160, 133/Ig" {} \;
 	
-cd theme
 	glib-compile-resources gnome-shell-theme.gresource.xml
 cd ../
