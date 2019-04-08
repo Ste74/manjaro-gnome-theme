@@ -48,7 +48,7 @@ find . -type f -name '*.css' -exec sed -i \
 	s/#4a90d9/#16a085/Ig;\
 	s/#185fb4/#16a085/Ig;\
 	s/#1b6acb/#16a085/Ig;\
-	s/33, 93, 156/22, 160, 133/Ig" {} \;
+	s/21, 83, 158/22, 160, 133/Ig" {} \;
 
 	
 	glib-compile-resources gnome-shell-theme.gresource.xml

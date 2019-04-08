@@ -16,10 +16,11 @@
     <file>key-shift-uppercase.svg</file>
     <file>key-shift-latched-uppercase.svg</file>
     <file alias="icons/message-indicator-symbolic.svg">message-indicator-symbolic.svg</file>
-    <file>no-events.svg</file>
-    <file>no-notifications.svg</file>
     <file>branding.png</file>
     <file>manjaro.png</file>
+    <file>no-events.svg</file>
+    <file>no-notifications.svg</file>
+    <file>noise-texture.png</file>
     <file>pad-osd.css</file>
     <file>process-working.svg</file>
     <file>toggle-off-us.svg</file>
