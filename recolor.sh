@@ -39,14 +39,17 @@ find . -type f -name '*.svg' -exec sed -i \
 	s/205b9a/#64FFA4/Ig" {} \;
 
 find . -type f -name '*.css' -exec sed -i \
-	"s/#215d9c/#16a085/Ig;\
-	s/#184472/#16a085/Ig;\
-	s/#74aae2/#16a085/Ig;\
-	s/#2a76c6/#16a085/Ig;\
-	s/1c5187/#16a085/Ig;\
-	s/256ab1/#16a085/Ig;\
-	s/4a90d9/#16a085/Ig;\
+	"s/#15539e/#16a085/Ig;\
+	s/#0f3b71/#138f76;/Ig;\
+	s/#3583e3/#16a085/Ig;\
+	s/#629fea/#16a085/Ig;\
+	s/#1c5187/#16a085/Ig;\
+	s/#3584e4/#16a085/Ig;\
+	s/#4a90d9/#16a085/Ig;\
+	s/#185fb4/#16a085/Ig;\
+	s/#1b6acb/#16a085/Ig;\
 	s/33, 93, 156/22, 160, 133/Ig" {} \;
+
 	
 	glib-compile-resources gnome-shell-theme.gresource.xml
 cd ../
