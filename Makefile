@@ -18,7 +18,7 @@ install:
 	install -m644 $(THEME_ICON) $(DESTDIR)$(THEME_DIR)/icons
 
 uninstall:
-	rm -f $(DESTDIR)$(ICON_DIR_USER)/$(ICON_SKEL)
 	rm -Rf $(DESTDIR)$(THEME_DIR)
+	rm -f $(DESTDIR)$(ICON_DIR_USER)/$(ICON_USER)
 
 .PHONY: install uninstall
