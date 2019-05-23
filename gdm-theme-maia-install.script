@@ -2,30 +2,115 @@
 
 #Used directory
 
+workdir=/tmp/Manjaro/gnome-shell
 gnomedir=/usr/share/gnome-shell
 themedir=/usr/share/themes/manjaro-gdm-theme
+themedir_tmp=$workdir/theme
 theme=gnome-shell-theme.gresource
 
-#Install & Upgrade GDM theme and icons
+extract_theme() {
 
-cd $gnomedir
+	gst=/usr/share/gnome-shell/gnome-shell-theme.gresource
 
-install() {
-#install GDM Maia theme and backup the GDM Gnome
-mv $theme $theme.old 
-cp -f $themedir/$theme $gnomedir/$theme
-}
-
-upgrade() {
-cmp --silent $gnomedir/$theme $themedir/$theme 
-	if [ $? == 1 ]; then
-		cp -f $themedir/$theme $gnomedir/$theme
+	if [ -d $workdir ]; then
+		rm -R $workdir
 	fi
+
+	for r in `gresource list $gst`; do
+		r=${r#\/org\/gnome\/shell/}
+		if [ ! -d $workdir/${r%/*} ]; then
+	  	mkdir -p $workdir/${r%/*}
+		fi
+	done
+
+	for r in `gresource list $gst`; do
+        gresource extract $gst $r >$workdir/${r#\/org\/gnome\/shell/}
+	done
 }
 
-if [ ! -e $theme.old ]; then
-	install
-else
-	upgrade
-fi
+manjaro_colors() {
+
+cd $themedir_tmp
+
+find . -type f -name '*.svg' -exec sed -i \
+	"s/#2c1cff/#16a085/Ig;\
+	s/#0000ff/#16a085/Ig;\
+	s/#1862af/#64FFA4/Ig;\
+	s/#3465a4/#64FFA4/Ig;\
+	s/#182f4c/#16a085/Ig;\
+	s/#2975c4/#16a085/Ig;\
+	s/#4a90d9/#16a085/Ig;\
+	s/#006098/#16a085/Ig;\
+	s/205b9a/#64FFA4/Ig" {} \;
+
+find . -type f -name '*.css' -exec sed -i \
+	"s/#15539e/#16a085/Ig;\
+	s/#0f3b71/#138f76;/Ig;\
+	s/#3583e3/#16a085/Ig;\
+	s/#629fea/#16a085/Ig;\
+	s/#1c5187/#16a085/Ig;\
+	s/#3584e4/#16a085/Ig;\
+	s/#4a90d9/#16a085/Ig;\
+	s/#185fb4/#16a085/Ig;\
+	s/#1b6acb/#16a085/Ig;\
+	s/21, 83, 158/22, 160, 133/Ig" {} \;
+}
+
+mk_xml_file() {
+
+	echo '<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/shell/theme">
+    <file>calendar-today.svg</file>
+    <file>checkbox-focused.svg</file>
+    <file>checkbox-off-focused.svg</file>
+    <file>checkbox-off.svg</file>
+    <file>checkbox.svg</file>
+    <file>dash-placeholder.svg</file>
+    <file>gnome-shell.css</file>
+    <file>gnome-shell-high-contrast.css</file>
+    <file>key-enter.svg</file>
+    <file>key-hide.svg</file>
+    <file>key-layout.svg</file>
+    <file>key-shift.svg</file>
+    <file>key-shift-uppercase.svg</file>
+    <file>key-shift-latched-uppercase.svg</file>
+    <file alias="icons/message-indicator-symbolic.svg">message-indicator-symbolic.svg</file>
+    <file>branding.png</file>
+    <file>manjaro.png</file>
+    <file>no-events.svg</file>
+    <file>no-notifications.svg</file>
+    <file>noise-texture.png</file>
+    <file>pad-osd.css</file>
+    <file>process-working.svg</file>
+    <file>toggle-off-us.svg</file>
+    <file>toggle-off-intl.svg</file>
+    <file>toggle-off-hc.svg</file>
+    <file>toggle-on-us.svg</file>
+    <file>toggle-on-intl.svg</file>
+    <file>toggle-on-hc.svg</file>
+  </gresource>
+</gresources>
+' > $themedir_tmp/gnome-shell-theme.gresource.xml
+}
+
+build_gresource()
+{
+	cd $themedir_tmp
+	glib-compile-resources gnome-shell-theme.gresource.xml
+}
+
+#transform theme
+extract_theme
+manjaro_colors
+ cp -f $themedir/branding.png $themedir_tmp/
+ cp -f $themedir/manjaro.png $themedir_tmp/
+ cp -f $themedir/branding.png $themedir_tmp/noise.png
+ mk_xml_file
+build_gresource
+
+#install the theme
+rm -f $gnomedir/gnome-shell-theme.gresource
+mv $themedir_tmp/gnome-shell-theme.gresource $gnomedir
+mv -f $themedir_tmp/* $themedir/ 
 

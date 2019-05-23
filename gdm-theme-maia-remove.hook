@@ -6,4 +6,4 @@ Target = manjaro-gdm-theme
 [Action]
 Description = Remove Manjaro GDM theme
 When = PreTransaction
-Exec = /usr/share/libalpm/scripts/gdm-theme-maia-remove
+Exec = /bin/sh -c 'pacman -S gnome-shell --noconfirm'
