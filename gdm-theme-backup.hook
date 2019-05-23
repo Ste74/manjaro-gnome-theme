@@ -1,9 +1,0 @@
-[Trigger]
-Operation = Upgrade
-Type = Package
-Target = gnome-shell
-
-[Action]
-Description = Gnome GDM theme backup
-When = PostTransaction
-Exec = /usr/share/libalpm/scripts/gdm-theme-backup
