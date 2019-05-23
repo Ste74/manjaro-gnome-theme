@@ -6,4 +6,4 @@ Target = manjaro-gdm-theme
 [Action]
 Description = Remove Manjaro GDM theme
 When = PreTransaction
-Exec = /bin/sh -c 'pacman -S gnome-shell --noconfirm'
+Exec = /bin/sh -c 'rm -f /var/lib/pacman/db.lck && pacman -S gnome-shell --noconfirm'
