@@ -36,6 +36,7 @@ find . -type f -name '*.svg' -exec sed -i \
 	s/#2975c4/#16a085/Ig;\
 	s/#4a90d9/#16a085/Ig;\
 	s/#006098/#16a085/Ig;\
+	s/#15539e/#16a085/Ig;\
 	s/205b9a/#64FFA4/Ig" {} \;
 
 find . -type f -name '*.css' -exec sed -i \
