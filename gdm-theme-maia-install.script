@@ -10,7 +10,7 @@ theme=gnome-shell-theme.gresource
 
 extract_theme() {
 
-	gst=/usr/share/gnome-shell/gnome-shell-theme.gresource
+	gst=/usr/share/gnome-shell/$theme
 
 	if [ -d $workdir ]; then
 		rm -R $workdir
@@ -91,26 +91,25 @@ mk_xml_file() {
     <file>toggle-on-hc.svg</file>
   </gresource>
 </gresources>
-' > $themedir_tmp/gnome-shell-theme.gresource.xml
+' > $themedir_tmp/$theme.xml
 }
 
 build_gresource()
 {
 	cd $themedir_tmp
-	glib-compile-resources gnome-shell-theme.gresource.xml
+	glib-compile-resources $theme.xml
 }
 
 #transform theme
 extract_theme
 manjaro_colors
- cp -f $themedir/branding.png $themedir_tmp/
- cp -f $themedir/manjaro.png $themedir_tmp/
- cp -f $themedir/branding.png $themedir_tmp/noise.png
+ cp -f $themedir/branding-png.orig $themedir_tmp/branding.png
+ cp -f $themedir/manjaro-png.orig $themedir_tmp/manjaro.png
+ cp -f $themedir/branding-png.orig $themedir_tmp/noise.png
  mk_xml_file
 build_gresource
 
 #install the theme
-rm -f $gnomedir/gnome-shell-theme.gresource
-mv $themedir_tmp/gnome-shell-theme.gresource $gnomedir
+rm -f $gnomedir/$theme
+mv $themedir_tmp/$theme $gnomedir
 mv -f $themedir_tmp/* $themedir/ 
-
