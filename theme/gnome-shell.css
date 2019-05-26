@@ -187,18 +187,11 @@ StScrollBar {
 
 /* Switches */
 .toggle-switch {
-  width: 65px;
+  width: 46px;
   height: 22px;
-  background-size: contain; }
-
-.toggle-switch-us {
-  background-image: url("resource:///org/gnome/shell/theme/toggle-off-us.svg"); }
-  .toggle-switch-us:checked {
-    background-image: url("resource:///org/gnome/shell/theme/toggle-on-us.svg"); }
-
-.toggle-switch-intl {
+  background-size: contain;
   background-image: url("resource:///org/gnome/shell/theme/toggle-off-intl.svg"); }
-  .toggle-switch-intl:checked {
+  .toggle-switch:checked {
     background-image: url("resource:///org/gnome/shell/theme/toggle-on-intl.svg"); }
 
 /* links */
@@ -1039,6 +1032,10 @@ StScrollBar {
 .ripple-box:rtl {
   border-radius: 0 0 0 52px; }
 
+.select-area-rubberband {
+  background-color: rgba(22, 160, 133, 0.3);
+  border: 1px solid #16a085; }
+
 .popup-menu-arrow {
   icon-size: 1.09em; }
 
@@ -1654,13 +1651,15 @@ StScrollBar {
 .candidate-page-button-icon {
   icon-size: 1em; }
 
-/* Auth Dialogs & Screen Shield */
-.user-icon {
+.framed-user-icon {
+  background-image: url("resource:///org/gnome/shell/theme/manjaro.png");
   background-size: contain;
-  color: #eeeeec;
-  border-radius: 99px; }
-  .user-icon:hover {
-    color: white; }
+  border: none;
+  color: transparent;
+  border-radius: 3px; }
+  .framed-user-icon:hover {
+    border-color: transparent;
+    color: transparent; }
 
 .login-dialog-banner-view {
   padding-top: 24px;
